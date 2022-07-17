@@ -8,3 +8,5 @@ Cсылка на макеты: [Figma](https://www.figma.com/file/G3r5nzXhqb7knD
 
 - `npm run start` — билд и старт express cервера,
 - `npm run build` — билд
+
+Ссылка на PR 1: [Git](https://github.com/viIena/middle.messenger.praktikum.yandex/pull/1)
