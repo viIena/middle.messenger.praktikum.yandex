@@ -1,0 +1,11 @@
+.chat {
+    display: flex;
+    background: red;
+}
+
+
+/* TODO: add variable */
+.chat-communication {
+    flex-basis: 310px;
+    border-right: 1px gray;
+}
