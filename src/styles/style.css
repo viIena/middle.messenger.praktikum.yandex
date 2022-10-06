@@ -1,0 +1,4 @@
+@import './global.css';
+
+@import './../partials/wrapper/wrapper.css';
+@import './../pages/chat/chat.css';

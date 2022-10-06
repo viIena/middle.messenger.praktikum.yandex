@@ -1,10 +1,31 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "target": "es2016",
-    "declaration": false,
+    "target": "es6",
+    // Нужно для плавного перехода
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
     "module": "commonjs",
-    "strictNullChecks": true,
-    "sourceMap": true
-  }
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "lib": [
+        "ES2021",
+        "dom",
+        "DOM.Iterable"
+    ],
+    "typeRoots": [
+        "node_modules/@types",
+        "@types"
+    ],
+    "resolveJsonModule": true
+  },
+  "include": [
+    "src/**/*",
+    "@types/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
