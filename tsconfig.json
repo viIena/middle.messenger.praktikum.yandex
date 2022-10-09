@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "target": "es6",
-    // Нужно для плавного перехода
-    "allowJs": true,
+    //"allowJs": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
