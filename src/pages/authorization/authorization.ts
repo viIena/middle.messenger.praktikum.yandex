@@ -1,6 +1,6 @@
 import Block from '../../template/block'
 import template from 'bundle-text:./authorization.hbs'
-import { checkInputValue, InputType } from '../../utils/mask'
+import { checkInputValue, InputType } from '../../utils/validators'
 
 export class AuthorizationPage extends Block {
     constructor() {
@@ -19,14 +19,12 @@ export class AuthorizationPage extends Block {
             },
             check: (): boolean => {
                 let error = ''
-                Object.entries(this.refs).forEach((inputRef) => {
-                    const input = inputRef[1] as HTMLInputElement
+                Object.values(this.refs).forEach((inputRef) => {
+                    const input = inputRef as HTMLInputElement
                     error = checkInputValue(input.type as InputType, input.value)
                 })
 
-                if (error)
-                    return false
-                return true
+                return error === ''
             }
         })
     }

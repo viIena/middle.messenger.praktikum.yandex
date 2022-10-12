@@ -42,5 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
         break
   }
 
-  renderDOM(App);
+  renderDOM(App, '#app');
 });

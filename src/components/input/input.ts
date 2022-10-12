@@ -1,4 +1,4 @@
-import { InputType } from '../../utils/mask';
+import { InputType } from '../../utils/validators';
 import Block from '../../template/block';
 import template from 'bundle-text:./input.hbs'
 
