@@ -1,3 +1,48 @@
-<main>
-    {{> header/header text="Тут скоро будет чат)" }}
-</main>
+<div class='chat'>
+        <div class="chat-communication">
+        <div class="chat-communication-header">
+            {{!-- TODO: Сделать подсказачку на кнопку --}}
+            <button class='chat-communication-header-profile' title="Профиль">
+                <img src='../../assets/profile.svg' alt=''/>
+            </button>
+            <input class='chat-communication-header-search' />
+        </div>
+        <ul class="chat-communication-users-list">
+            <li>
+                {{!-- TODO: Тайтл = имя --}}
+                <button class="'chat-communication-user">
+                    <img src='../../assets/profile.svg' alt=''/>
+                    <h5>Антон</h5>
+                    <p>Помнишь, ты говорил о каком-то очень крутом обучении?</p>
+                </button>
+                                <button class="'chat-communication-user">
+                    <img src='../../assets/profile.svg' alt=''/>
+                    <h5>Антон</h5>
+                    <p>Помнишь, ты говорил о каком-то очень крутом обучении?</p>
+                </button>
+                                <button class="'chat-communication-user">
+                    <img src='../../assets/profile.svg' alt=''/>
+                    <h5>Антон</h5>
+                    <p>Помнишь, ты говорил о каком-то очень крутом обучении?</p>
+                </button>
+                                <button class="'chat-communication-user">
+                    <img src='../../assets/profile.svg' alt=''/>
+                    <h5>Антон</h5>
+                    <p>Помнишь, ты говорил о каком-то очень крутом обучении?</p>
+                </button>
+
+            </li>
+        </ul>
+    </div>
+    <div class="chat-message">
+        <div class="chat-message-header">
+            {{{ Header text="Тут скоро будет чат)" }}}
+        </div>
+        <div class="chat-message-history">
+            {{{ Header text="Выберите чат чтобы отправить сообщение" }}}
+        </div>
+        <div class="chat-message-footer">
+            {{{ Header text="Тут скоро будет чат)" }}}
+        </div>
+    </div>
+</div>

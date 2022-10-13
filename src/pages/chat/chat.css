@@ -1,0 +1,64 @@
+@import '../../styles/colors.css';
+
+:root {
+    --width-communication-column: 310px;
+}
+
+.chat {
+    display: flex;
+    height: 100%;
+ }
+
+
+.chat-communication {
+    flex-basis: var(--width-communication-column);
+    border-right: 1px solid var(--gray);
+}
+
+.chat-communication-header {
+    border-bottom: 1px solid var(--gray);
+}
+
+.chat-communication-header-profile {
+    margin: 15px 21px;
+}
+
+.chat-communication-header-search {
+    outline: none;
+    border: 0;
+    padding: 0;
+    background-color: var(--gray);
+}
+
+.chat-communication-users-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: pink;
+}
+
+.chat-communication-user {
+    display: flex;
+    border-bottom: 1px solid var(--gray);
+}
+
+.chat-message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chat-message-header {
+    border-bottom: 1px solid var(--gray);
+    background-color: aquamarine;
+}
+
+.chat-message-history {
+    flex-grow: 1;
+    background-color: pink;
+}
+
+.chat-message-footer {
+    border-top: 1px solid var(--gray);
+    background-color: aquamarine;
+}

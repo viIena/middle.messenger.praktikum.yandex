@@ -1,9 +1,7 @@
-<main>
-    {{> header/header text="Вход" }}
-    {{> label/label text="Логин" }}
-    {{> input/input }}
-    {{> label/label text="Пароль" }}
-    {{> input/input }}
-    {{> button/button text="Авторизоваться" }}
-    {{> link/link text="Нет аккаунта?" }}
-</main>
+<div class='center'>
+    {{{ Header text="Вход" }}}
+    {{{ Input ref="login" type="login" }}}
+    {{{ Input ref="password" type="password" }}}
+    {{{ Button text="Авторизоваться" onClick=onSubmit }}}
+    {{{ Button text="Нет аккаунта?" }}}
+</div>
